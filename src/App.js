@@ -1,23 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Brand , CTA, Navbar } from './components'
+import {Footer, Blog, Possibility, Header,Features, WhatGpt3} from './containers'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div className="gradient__bg">
+        <Navbar></Navbar>
+        <Header></Header>
+      </div>
+      <Brand></Brand>
+      <WhatGpt3></WhatGpt3>
+      <Features></Features>
+      <Possibility></Possibility>
+      <CTA></CTA>
+      <Blog></Blog>
+      <Footer></Footer>
     </div>
   );
 }
